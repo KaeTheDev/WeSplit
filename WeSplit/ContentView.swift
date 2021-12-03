@@ -53,11 +53,17 @@ struct ContentView: View {
                          }
                          .pickerStyle(.segmented)
                      } // End of Second Section
+                 header:{
+                     Text("How much top do you want to leave?")
+                 }
                      
                      
                      Section{
                          Text(totalPerPerson, format: .currency(code: Locale.current.currencyCode ?? "USD"))
-                        } // End of Third Section
+                        }// End of Third Section
+                 header:{
+                     Text("Amount Per Person")
+                 }
                     }
                         .navigationTitle("WeSplit")
                         .toolbar{
